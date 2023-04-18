@@ -1,20 +1,14 @@
 package antifraud.entity.response;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@RequiredArgsConstructor
+@NoArgsConstructor
 public class Status {
     private String status;
-
-    public Status() {
-    }
-
-    public Status(String status) {
-        this.status = status;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
 }

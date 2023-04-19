@@ -25,7 +25,7 @@ public class Transaction {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long transactionId;
 
-    @NotNull
+    @Min(1)
     private long amount;
 
     @IPv4Format

@@ -60,10 +60,6 @@ public class TransactionService {
         int ipCounter = 0;
         int regionCounter = 0;
 
-        if (amount <= 0) {
-            return new ResponseEntity<>(new Result("Wrong request!", "amount"), HttpStatus.BAD_REQUEST);
-        }
-
         List<Transaction> transactions = getLastHourTransactions(number, date);
         for (Transaction t : transactions) {
             if (!t.getIp().equals(ip)) {
